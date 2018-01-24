@@ -1,0 +1,59 @@
+{
+  "name": "react-donate-crypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "": "",
+    "test": "jest --notify --config=jest.config.json NODE_ENV=test",
+    "test:watch": "jest --notify --config=jest.config.js --watchAll",
+    "run:dev": "webpack-dev-server --config ./webpack/webpack.config.example.js --hot --inline",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
+  },
+  "author": "Kei Oka",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.0.6",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.0.6",
+    "node-sass": "^4.0.0",
+    "postcss": "^6.0.16",
+    "postcss-loader": "^2.0.10",
+    "react": "^16.2.0",
+    "react-dom": "^16.0.0",
+    "react-motion": "^0.5.2",
+    "react-styleguidist": "^6.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "svg-react-loader": "^0.4.5",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.0",
+    "qrcode.react": "^0.7.2",
+    "react-icons": "^2.2.7",
+    "react-motion-ui-pack": "^0.10.3"
+  }
+}

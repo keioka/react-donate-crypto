@@ -1,0 +1,24 @@
+@import '../style/main.scss';
+
+.element {
+  width: 340px;
+  height: 500px;
+
+  border-radius: 8px;
+  background: $_color-background;
+  box-shadow: $_shadow-background;
+
+  z-index: 50000;
+}
+
+.body {
+  padding: 1.5em 2em;
+  height: calc(100% - 150px - 3.5em);
+  overflow-y: scroll;
+}
+
+.sectionButtons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

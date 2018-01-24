@@ -1,0 +1,82 @@
+@import '../style/main.scss';
+
+.element {
+  width: 100%;
+  height: 150px;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 2px solid $_color-sub;
+  background: $_color-main;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  position: relative;
+
+  animation: shrink 200ms ease-in;
+}
+
+@keyframes shrink {
+  from {
+    transition: scaleY(4);
+  }
+  to {
+    transition: scaleY(1);
+  }
+}
+
+.iconClose {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.boxImg {
+  display: flex;
+  flex: 2;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 64px;
+  height: 64px;
+}
+
+.info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 2em;
+}
+
+.textOwnerName, .textMessage {
+  margin: 0;
+  padding: 0;
+}
+
+.textOwnerName {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.textMessage {
+  font-size: 0.8em;
+  font-weight: 400;
+}

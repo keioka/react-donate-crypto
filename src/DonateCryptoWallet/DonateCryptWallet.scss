@@ -1,0 +1,135 @@
+@import '../style/main.scss';
+
+.element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textSymbol {
+  margin: 1px 0px;
+  font-size: 0.7em;
+}
+
+.textFullName {
+  margin: 1px 0px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.textAddress {
+  margin-top: 1em;
+  font-size: 0.8em;
+  font-weight: 700;
+  animation: fadeIn 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  will-change: opacity;
+}
+
+@keyframes type {
+  from { width: 0; }
+  to { width: 100; }
+}
+
+@keyframes  sildeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.btnBack {
+  @extend %_btn;
+  font-size: 0.8em;
+  font-family: $font-family-main;
+  color: $_color-font;
+  padding: 3px 4px;
+  cursor: pointer;
+
+  animation: sildeInBottom 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  will-change: opacity;
+}
+
+.btnBackInner {
+  display: flex;
+  align-items: center;
+}
+
+.btnBackText {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sectionQrCode {
+  padding: 1rem 0px 2rem;
+  animation: fadeIn 700ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  will-change: opacity;
+}
+
+@keyframes  fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.currencyInfo {
+  display: flex;
+  flex-direction: row;
+  color: $_color-font;
+  margin-bottom: 1em;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  background: #f9f9f5;
+  padding: 10px 0px;
+  border-radius: 2px;
+
+  animation: sildeInTop;
+  animation-duration: 400ms;
+  animation-delay: 0;
+  will-change: opacity transform;
+}
+
+.currencyInfo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: red;
+}
+
+.currencyInfoNames {
+  margin-left: 5px;
+  padding: 3px 0px;
+}
+
+@keyframes  sildeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.iconArrowBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  width: 18px;
+  height: 18px;
+  background: $_color-btn;
+  border-radius: 50%;
+}

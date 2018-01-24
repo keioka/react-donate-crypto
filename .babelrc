@@ -1,0 +1,43 @@
+{
+  "presets": [
+    "react",
+    [{ "env": {
+      "targets": {
+        "browsers": ["last 2 versions", "> 5% in BE"]
+      },
+
+    }}]
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "env",
+        "react",
+      ],
+      "plugins": [
+        "syntax-class-properties",
+        "transform-class-properties"
+      ],
+    },
+    "test": {
+      "presets": [
+        "env",
+        "react",
+      ],
+      "plugins": [
+        "syntax-class-properties",
+        "transform-class-properties"
+      ],
+    },
+    "production": {
+      "presets": [
+        "env",
+        "react",
+      ],
+      "plugins": [
+        "syntax-class-properties",
+        "transform-class-properties"
+      ],
+    }
+  }
+}
